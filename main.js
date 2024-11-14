@@ -7,3 +7,9 @@ faqQuestions.forEach(question => {
         faqItem.classList.toggle('active');
     });
 });
+
+  // Muestrar y oculta el menú en pantallas pequeñas
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }

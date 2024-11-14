@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -14,6 +15,7 @@ section {
   background-color: #f0f8ff;
 }
 
+/* Estilos generales para el header */
 header {
   display: flex;
   justify-content: space-between;
@@ -24,10 +26,12 @@ header {
   position: fixed;
   z-index: 101;
   width: 100%;
+  font-size: clamp(5px, 3rem, 17px);
 }
 
 .logo img {
   height: 50px;
+  white-space: nowrap;
 }
 
 .menu {
@@ -40,6 +44,8 @@ header {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .header-info {
@@ -52,16 +58,20 @@ header {
   color: #333;
   font-weight: bold;
   text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .cta-button {
-  background-color: #0073e6;
+  background-color: #333;
   color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .social-media a {
@@ -69,6 +79,90 @@ header {
   color: #333;
   text-decoration: none;
 }
+.menu-toggle {
+  display: none;
+}
+
+/* Media Queries para Pantallas Pequeñas */
+@media screen and (max-width: 768px) {
+  .cta-button {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  header {
+    padding: 15px;
+    justify-content: space-around;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .menu {
+    display: none; /* Ocultamos el menú por defecto */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu li a {
+    color: #333;
+    font-size: 1.2rem;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .header-info {
+    margin-top: 15px;
+  }
+
+  .phone {
+    margin-bottom: 10px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+}
+
+/* Media Queries para Dispositivos Móviles */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+  }
+
+  .menu li a {
+    font-size: 1rem;
+  }
+}
+
 /* Estilos para la sección de animación */
 .animation-section {
   position: relative;
@@ -428,7 +522,7 @@ h2 {
 
 /* Footer Styles */
 footer {
-    box-shadow: 0 0 1px black;
+  box-shadow: 0 0 1px black;
   background-color: #f0f8ff;
   padding: 6pc 20px;
 }
