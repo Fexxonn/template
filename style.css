@@ -85,6 +85,9 @@ header {
 
 /* Media Queries para Pantallas Pequeñas */
 @media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
   .cta-button {
     display: none;
   }
