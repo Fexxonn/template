@@ -170,6 +170,8 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  font-size: clamp(5px, 3rem, 17px);
+  padding: 1pc;
 }
 
 .ball {
