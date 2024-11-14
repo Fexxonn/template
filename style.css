@@ -362,74 +362,74 @@ h2 {
 
 /* Estilos para la sección FAQ */
 .faq {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 10px;
-    text-align: center;
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 .faq h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 20px;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .faq p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
 }
 
 /* Estilos para las preguntas frecuentes */
 .faq-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 15px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .faq-question {
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    text-align: left;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .faq-question:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 .faq-answer {
-    overflow: hidden;
-    max-height: 0;  /* Oculta la respuesta por defecto */
-    padding: 0 15px;
-    background-color: #f1f1f1;
-    color: #666;
-    border-radius: 0 0 10px 10px;
-    transition: max-height 0.5s ease-out, padding 0.3s ease-out;  /* Transición suave */
+  overflow: hidden;
+  max-height: 0; /* Oculta la respuesta por defecto */
+  padding: 0 15px;
+  background-color: #f1f1f1;
+  color: #666;
+  border-radius: 0 0 10px 10px;
+  transition: max-height 0.5s ease-out, padding 0.3s ease-out; /* Transición suave */
 }
 
 .faq-answer p {
-    font-size: 1rem;
-    margin: 15px 0;
+  font-size: 1rem;
+  margin: 15px 0;
 }
 
 /* Estilo para mostrar las respuestas */
 .faq-item.active .faq-answer {
-    max-height: 200px; /* Ajusta según el contenido */
-    padding: 15px;
+  max-height: 200px; /* Ajusta según el contenido */
+  padding: 15px;
 }
-
 
 /* Footer Styles */
 footer {
-  background-color: #f8f8f8;
+    box-shadow: 0 0 1px black;
+  background-color: #f0f8ff;
   padding: 6pc 20px;
 }
 
